@@ -48,7 +48,19 @@ GROUP BY Region, Product_Sub_Category
 ~~~
 **Output/Visuala**
 
-{Image3}
+{Image3} (https://github.com/FunkeOdelana/DSA_-my-First-TRYER/blob/main/Q3.PNG)
+
+~~~sql
+
+---Question 4: Advise the management of KMS on what to do to increase revenue from the bottom 10 customers?--
+
+SELECT TOP 10 [Customer_Name],
+SUM(sales) AS Total_Sales
+FROM KMS_Case
+GROUP BY [Customer_Name]
+ORDER BY Total_Sales ASC;
+~~~
+{Image4} (
 
 
 
