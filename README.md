@@ -60,7 +60,22 @@ FROM KMS_Case
 GROUP BY [Customer_Name]
 ORDER BY Total_Sales ASC;
 ~~~
-{Image4} (
+**Output /Visuals
+{Image4} ( https://github.com/FunkeOdelana/DSA_-my-First-TRYER/blob/main/Q4.PNG)
+
+
+~~~sql
+
+---Question 5: KMS incurred the most shipping cost using which shipping method?--
+
+SELECT Ship_Mode, SUM(Shipping_Cost) AS Total_Shipping_Cost
+FROM KMS_Case
+GROUP BY Ship_Mode
+ORDER BY Total_Shipping_Cost DESC;
+~~~
+*Output/Visuals
+{Image 5} (
+
 
 
 
