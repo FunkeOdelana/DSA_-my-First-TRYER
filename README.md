@@ -117,7 +117,7 @@ ORDER BY t5.Total_Sales DESC;
 {Image 6} ( https://github.com/FunkeOdelana/DSA_-my-First-TRYER/blob/main/Q6.PNG)
 
 
-~~~
+~~~sql
 --Question 7: Which small business customer had the highest sales?--
 
 SELECT TOP 1 Customer_Name, SUM(Sales) AS Total_Sales
@@ -131,7 +131,7 @@ ORDER BY Total_Sales DESC;
 {Image 7} (https://github.com/FunkeOdelana/DSA_-my-First-TRYER/blob/main/Q7.PNG)
 
 
-~~~
+~~~sql
 
 ---Question 8: Which corporate customer placed the most number of orders in 2009-2012?-
 SELECT TOP 1 Customer_Name, COUNT(DISTINCT Order_ID) AS Number_Of_Orders
@@ -143,7 +143,7 @@ ORDER BY Number_Of_Orders DESC;
 **Output Visuals**
 {Image 8} (https://github.com/FunkeOdelana/DSA_-my-First-TRYER/blob/main/Q8.PNG)
 
-~~~
+~~~sql
 
 ---Question 9:  Which consumer customer was the most profitable one?---
 SELECT TOP 1 Customer_Name, SUM(Profit) AS Total_Profit
@@ -155,7 +155,7 @@ ORDER BY Total_Profit DESC;
 **Output Visuals**
 {Image 9} (https://github.com/FunkeOdelana/DSA_-my-First-TRYER/blob/main/Q9.PNG)
 
-~~~
+~~~sql
 
 ---Question 10: Which consumer returned items, and what segment do they belong to?----
 SELECT DISTINCT 
@@ -171,7 +171,7 @@ WHERE os.[Status] = 'Returned';
 {Image10} (https://github.com/FunkeOdelana/DSA_-my-First-TRYER/blob/main/Q1O.PNG)
 
 
-~~~
+~~~sql
 --Question 11: If the delivery truck is the most economical but the slowest, shipping method and Express Air is the fastest but the most expensive one, do you think the company appropriately sent shipping costs based on the Order Priority? 
 WITH EvaluatedOrders AS (
 SELECT Order_ID, Customer_Name, Order_Priority, Ship_Mode, Shipping_Cost, 
@@ -195,7 +195,8 @@ GROUP BY Shipping_Evaluation
 ORDER BY Order_Count DESC;
 ~~~
 **Output Visuals**
-{Image 11} (
+{Image 11} (https://github.com/FunkeOdelana/DSA_-my-First-TRYER/blob/main/Q11.PNG)
+~~~
 
 
 
