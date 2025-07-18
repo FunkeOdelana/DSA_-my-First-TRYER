@@ -34,7 +34,24 @@ ORDER BY Total_Sales ASC;
 ~~~
 **Output/ Visuals**
 
-{Image2} (
+{Image2} (https://github.com/FunkeOdelana/DSA_-my-First-TRYER/blob/main/Q2.PNG)
+
+~~~sql
+
+---3_ Total Appliances _Sale
+
+
+SELECT Region, Product_Sub_Category, SUM (Sales) AS [Total_Sales]
+FROM KMS_Case
+WHERE Region = 'Ontario' AND Product_Sub_Category = 'Appliances'
+GROUP BY Region, Product_Sub_Category
+~~~
+**Output/Visuala**
+
+{Image3}
+
+
+
 
 
 
