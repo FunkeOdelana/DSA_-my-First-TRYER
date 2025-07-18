@@ -141,7 +141,9 @@ GROUP BY Customer_Name
 ORDER BY Number_Of_Orders DESC;
 ~~~
 **Output Visuals**
-{Image 8} (
+{Image 8} (https://github.com/FunkeOdelana/DSA_-my-First-TRYER/blob/main/Q8.PNG)
+
+~~~
 
 
 
