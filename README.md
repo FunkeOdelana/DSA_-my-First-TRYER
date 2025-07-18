@@ -153,7 +153,23 @@ GROUP BY Customer_Name
 ORDER BY Total_Profit DESC;
 ~~~
 **Output Visuals**
-{Image 9} (
+{Image 9} (https://github.com/FunkeOdelana/DSA_-my-First-TRYER/blob/main/Q9.PNG)
+
+~~~
+
+---Question 10: Which consumer returned items, and what segment do they belong to?----
+SELECT DISTINCT 
+    cs.[Customer_Name],
+    cs.[Customer_Segment]
+FROM KMS_Case cs
+INNER JOIN 
+Order_Status os ON cs.[Order_ID] = os.[Order_ID]
+WHERE os.[Status] = 'Returned';
+~~~
+
+**Output/Visuals**
+{Image10} (
+
 
 
 
