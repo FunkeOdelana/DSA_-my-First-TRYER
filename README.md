@@ -114,7 +114,21 @@ ORDER BY t5.Total_Sales DESC;
 ~~~
 
 **Output Visuals**
-{Image 6} (
+{Image 6} ( https://github.com/FunkeOdelana/DSA_-my-First-TRYER/blob/main/Q6.PNG)
+
+
+~~~
+--Question 7: Which small business customer had the highest sales?--
+
+SELECT TOP 1 Customer_Name, SUM(Sales) AS Total_Sales
+FROM KMS_Case
+WHERE Customer_Segment = 'Small Business'
+GROUP BY Customer_Name
+ORDER BY Total_Sales DESC;
+~~~
+
+**Output Visuals**
+{Image 7} (
 
 
 
