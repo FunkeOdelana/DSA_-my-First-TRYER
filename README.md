@@ -128,7 +128,23 @@ ORDER BY Total_Sales DESC;
 ~~~
 
 **Output Visuals**
-{Image 7} (
+{Image 7} (https://github.com/FunkeOdelana/DSA_-my-First-TRYER/blob/main/Q7.PNG)
+
+
+~~~
+
+---Question 8: Which corporate customer placed the most number of orders in 2009-2012?-
+SELECT TOP 1 Customer_Name, COUNT(DISTINCT Order_ID) AS Number_Of_Orders
+FROM KMS_Case
+WHERE Customer_Segment = 'Corporate'
+GROUP BY Customer_Name
+ORDER BY Number_Of_Orders DESC;
+~~~
+**Output Visuals**
+{Image 8} (
+
+
+
 
 
 
