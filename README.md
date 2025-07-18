@@ -13,7 +13,7 @@ ORDER BY Total_Sales DESC;
 
 **Output/ Visuals**
 
-{}
+ {Image} (https://github.com/FunkeOdelana/DSA_-my-First-TRYER/commit/3c93dbe38ae6b1182b716ee7454449058ec4e2ed)
 
 
 
